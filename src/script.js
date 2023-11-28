@@ -111,12 +111,15 @@ const generateGalaxy = () => {
              /**
              * Size
              */
-            gl_PointSize = 2.0;
-
-
-             
+            gl_PointSize = 2.0;   
         }
     `,
+    fragmentShader: `
+       void main()
+       {
+        gl_FragColor = vec4(1.0, 1.0, 1.0,1.0);
+        #include <colorspace_fragment>
+       }`,
   });
 
   /**
